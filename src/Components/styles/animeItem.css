@@ -1,0 +1,113 @@
+.anime-container {
+    border-left: solid 20px #1b1b1b;
+    border-right: solid 20px #1b1b1b;
+    border-bottom:solid 5px #1b1b1b;
+    background-color: #1b1b1b;
+}
+
+.anime-container h2 {
+    background: linear-gradient(90deg, rgba(237, 218, 47, 1) 0%, rgba(247, 204, 34, 1) 100%, rgba(255, 193, 25, 1) 36%, rgba(237, 218, 47, 1) 79%);
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: solid 1px #a1a1a1;
+    border-left: solid 1px#a1a1a1;
+    border-right: solid 1px #a1a1a1;
+    height: 2rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    line-height: 2rem;
+}
+
+.anime-main-container {
+    border-bottom: solid 1px #a1a1a1;
+    border-left: solid 1px #a1a1a1;
+    border-right: solid 1px #a1a1a1;
+    padding: 5px;
+}
+
+.anime-info {
+    display: flow-root;
+
+    p {
+        color: rgb(230, 230, 230);
+
+        span {
+            color: rgb(1, 141, 50);
+        }
+
+        b {
+            color: rgb(243, 208, 39);
+        }
+    }
+
+}
+
+.anime-info-details p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+
+.description {
+
+    button {
+        background-color: transparent;
+        border: 0;
+        color: rgb(255, 191, 16);
+    }
+
+    button:hover {
+        color: rgb(199, 147, 3);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.episodes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4em, max-content));
+    grid-gap: 1em;
+    justify-content: center;
+    padding: 5px 1% 1% 1%;
+}
+
+.episode {
+    transition:all 0.3s 0.001s ease-in-out;
+     background-color: #303030;
+     border: solid  #303035;
+    color:white;
+    text-align: center;
+    line-height: 2em;
+    height: 2em;
+    width: 4em;
+
+    li{
+        font-size: 1.1rem;
+    }
+}
+
+.episode:visited{
+    color:rgb(221, 167, 18);
+}
+
+.episode:hover{
+    color:white;
+    background-color:#ffb700;
+    border: solid  #ffb700;
+    transition: all 0s ease-in-out;
+}
+
+.large-image {
+    float: left;
+    margin: 5px;
+    width: 25%;
+    height: auto;
+}
+
+.large-image img {
+    border: solid 1px rgb(0, 40, 0);
+    margin-bottom: -5px;
+    width: 100%;
+    height: 100%;
+}

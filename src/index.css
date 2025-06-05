@@ -1,0 +1,14 @@
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: black;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+@media (max-width:380px) {
+  body {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
