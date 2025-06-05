@@ -117,7 +117,7 @@ a img {
     overflow: hidden;
 }
 
-@media (max-width:380px) {
+@media (max-width:500px) {
     .popular-anime {
         padding: 2% 0;
         grid-gap: 0.5rem;

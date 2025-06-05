@@ -5,6 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuchonkAnime</title>
+    <script type="text/javascript">
+          document.onkeydown = function(e){
+            e = (e || window.event);
+            if (e.keyCode == 123 || e.keyCode == 18 ||(e.ctrlKey && e.shiftKey && e.keyCode == 73)
+          || (e.ctrlKey && e.shiftKey && e.keyCode == 74) || (e.ctrlKey && e.shiftKey && e.keyCode == 67) ||
+        (e.ctrlKey && e.keyCode == 85)) {
+              return false;
+            }
+          }
+          document.addEventListener('contextmenu',event => event.preventDefault());
+    </script>
   </head>
   <body>
     <div id="root"></div>

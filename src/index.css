@@ -6,9 +6,9 @@ body {
   margin-right: 4%;
 }
 
-@media (max-width:380px) {
+@media (max-width:500px) {
   body {
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
