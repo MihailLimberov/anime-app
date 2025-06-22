@@ -20,7 +20,7 @@ function Popular({ rendered, prevPage }) {
 
     const conditionalRender = () => {
 
-        return (!isSearch && rendered === "Popular") ? displayAnimes(popularAnime) : displayAnimes(searchResults);
+        return (!isSearch) ? displayAnimes(popularAnime) : displayAnimes(searchResults);
     };
 
     return (

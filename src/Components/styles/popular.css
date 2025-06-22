@@ -120,7 +120,7 @@ a img {
 @media (max-width:500px) {
     .popular-anime {
         padding: 2% 0;
-        grid-gap: 0.5rem;
+        grid-gap: 0.6rem;
     }
 
     .popular-stripe {  

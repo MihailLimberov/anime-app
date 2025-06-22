@@ -20,7 +20,7 @@ function Upcoming({ rendered, prevPage }) {
 
     const conditionalRender = () => {
 
-        return (!isSearch && rendered === "Upcoming") ? displayAnimes(upcomingAnime) : displayAnimes(searchResults);
+        return (!isSearch) ? displayAnimes(upcomingAnime) : displayAnimes(searchResults);
     }
 
     return (

@@ -22,7 +22,7 @@ function Ongoing({ rendered, prevPage }) {
 
     const conditionalRender = () => {
 
-        return (!isSearch && rendered === "Ongoing") ? displayAnimes(ongoingAnime) : displayAnimes(searchResults)
+        return (!isSearch) ? displayAnimes(ongoingAnime) : displayAnimes(searchResults)
     };
 
 

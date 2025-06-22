@@ -28,26 +28,30 @@ function HomePage() {
     }, [rendered]);
 
     const pageSaver = () => {
-        if (rendered === "Popular") {
-            if (prevPage !== rendered) {
-                sessionStorage.setItem("typePageKey", "1");
-                sessionStorage.setItem("searchPageKey", "1");
-            }
-            setPrevPage("Popular");
-        }
-        else if (rendered === "Upcoming") {
-            if (prevPage !== rendered) {
-                sessionStorage.setItem("typePageKey", "1");
-                sessionStorage.setItem("searchPageKey", "1");
-            }
-            setPrevPage("Upcoming");
-        }
-        else if (rendered === "Ongoing") {
-            if (prevPage !== rendered) {
-                sessionStorage.setItem("typePageKey", "1");
-                sessionStorage.setItem("searchPageKey", "1");
-            }
-            setPrevPage("Ongoing");
+
+        switch (rendered) {
+            case "Popular":
+                if (prevPage !== rendered) {
+                    sessionStorage.setItem("typePageKey", "1");
+                    sessionStorage.setItem("searchPageKey", "1");
+                }
+                setPrevPage("Popular");
+                break;
+
+            case "Upcoming":
+                if (prevPage !== rendered) {
+                    sessionStorage.setItem("typePageKey", "1");
+                    sessionStorage.setItem("searchPageKey", "1");
+                }
+                setPrevPage("Upcoming");
+                break;
+            case "Ongoing":
+                if (prevPage !== rendered) {
+                    sessionStorage.setItem("typePageKey", "1");
+                    sessionStorage.setItem("searchPageKey", "1");
+                }
+                setPrevPage("Ongoing");
+                break;
         }
     }
 
@@ -99,7 +103,7 @@ function HomePage() {
                 <form className="search-form">
                     <input type="text" placeholder="Search Anime" value={search} onChange={handleChange} />
                     <Link to="/" className="lnk">
-                        <button id="search-button" type="submit" disabled={disableButton} onClick={() => {
+                        <button type="submit" disabled={disableButton} onClick={() => {
                             setDisableButton(true);
                             setTimeout(() => setDisableButton(false), 1000);
                             return handleSubmit();
