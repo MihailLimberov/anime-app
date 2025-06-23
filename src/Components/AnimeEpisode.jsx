@@ -44,6 +44,10 @@ function AnimeEpisode() {
                 return <div id="iframe-container5">
                     <iframe src={`${import.meta.env.VITE_P5}/${sessionStorage.getItem("title2Key")}-episode-${ep}#subbed`} scrolling="no" allowFullScreen={true}></iframe></div>;
 
+            case "vidPl10":
+                return <div id="iframe-container5">
+                    <iframe src={`${import.meta.env.VITE_P5}/${sessionStorage.getItem("title3Key")}-episode-${ep}#subbed`} scrolling="no" allowFullScreen={true}></iframe></div>;
+
             case "dubPl1":
                 return <div className="iframe-container">
                     <iframe className="iframe-content" src={`${import.meta.env.VITE_P1}/${title}-dub-episode-${ep}`} allowFullScreen={true} ></iframe></div>;
@@ -100,6 +104,7 @@ function AnimeEpisode() {
                         <option value="vidPl7">VidPl-7</option>
                         <option value="vidPl8">VidPl-8</option>
                         <option value="vidPl9">VidPl-9</option>
+                        <option value="vidPl10">Pl-10</option>
                     </select>
                     <select value={vidPl} onChange={handleVidPlChange}>
                         <option>SUB</option>

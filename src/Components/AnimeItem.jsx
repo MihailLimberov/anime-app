@@ -78,9 +78,16 @@ function AnimeItem() {
         return resultStr;
     }
 
+    // alternative english title 
+    const getEnglishTitle = () => {
+        let titlesArr = anime?.titles?.[1]; // can vary between arr[0] and arr[1]
+        return (titlesArr?.title);
+    }
+
     //modify different titles to insert in the AnimeEpisode Component
     sessionStorage.setItem("title1Key", transformTitle(title));
     sessionStorage.setItem("title2Key", transformTitle(titleSlash));
+    sessionStorage.setItem("title3Key", transformTitle(getEnglishTitle()));
 
     return (<>
         <HomePage />
