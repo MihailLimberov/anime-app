@@ -88,6 +88,7 @@ function AnimeItem() {
     sessionStorage.setItem("title1Key", transformTitle(title));
     sessionStorage.setItem("title2Key", transformTitle(titleSlash));
     sessionStorage.setItem("title3Key", transformTitle(getEnglishTitle()));
+    sessionStorage.setItem("title4Key", transformTitle(title_english));
 
     return (<>
         <HomePage />

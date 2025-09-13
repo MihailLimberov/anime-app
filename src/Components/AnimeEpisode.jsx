@@ -48,6 +48,46 @@ function AnimeEpisode() {
                 return <div id="iframe-container5">
                     <iframe src={`${import.meta.env.VITE_P5}/${sessionStorage.getItem("title3Key")}-episode-${ep}#subbed`} scrolling="no" allowFullScreen={true}></iframe></div>;
 
+            case "vidPl11":
+                return <div id="iframe-container7">
+                    <iframe src={`${import.meta.env.VITE_P7}/${id}?ep=${ep}`} scrolling="no" allowFullScreen={true}></iframe></div>;
+
+            case "vidPl12":
+                return <div className="iframe-container">
+                    <iframe className="iframe-content" src={`${import.meta.env.VITE_P8}${title}&episode=${ep}`} allowFullScreen={true}></iframe></div>
+
+            case "vidPl13":
+                return <div className="iframe-container">
+                    <iframe className="iframe-content" src={`${import.meta.env.VITE_P8}${sessionStorage.getItem("title3Key")}&episode=${ep}`} allowFullScreen={true}></iframe></div>
+
+            case "vidPl14":
+                return <div id="iframe-container8">
+                    <iframe src={`${import.meta.env.VITE_P9}/${title}-episode-${ep}-english-subbed/`} scrolling="no" allowFullScreen={true}></iframe></div>
+
+            case "vidPl15":
+                return <div id="iframe-container8">
+                    <iframe src={`${import.meta.env.VITE_P9}/${sessionStorage.getItem("title4Key")}-episode-${ep}-english-subbed/`} scrolling="no" allowFullScreen={true}></iframe></div>
+
+            case "vidPl16":
+                return <div id="iframe-container9">
+                    <iframe src={`${import.meta.env.VITE_P10}/${id}?ep=${ep}`} scrolling="no" allowFullScreen={true}></iframe></div>
+
+            case "vidPl17":
+                return <div className="iframe-container">
+                    <iframe className="iframe-content" src={`${import.meta.env.VITE_P8}${sessionStorage.getItem("title4Key")}&episode=${ep}`} allowFullScreen={true}></iframe></div>
+
+            case "vidPl18":
+                return <div id="iframe-container5">
+                    <iframe src={`${import.meta.env.VITE_P5}/${sessionStorage.getItem("title4Key")}-episode-${ep}#subbed`} scrolling="no" allowFullScreen={true}></iframe></div>;
+
+            case "vidPl19":
+                return <div id="iframe-container4">
+                    <iframe src={`${import.meta.env.VITE_P4}/${sessionStorage.getItem("title4Key")}/ep${ep}`} scrolling="no" allowFullScreen={true}></iframe></div>;
+
+            case "vidPl20":
+                return <div className="iframe-container">
+                    <iframe className="iframe-content" src={`${import.meta.env.VITE_P1}/${sessionStorage.getItem("title4Key")}-episode-${ep}`} allowFullScreen={true} ></iframe></div>;
+
             case "dubPl1":
                 return <div className="iframe-container">
                     <iframe className="iframe-content" src={`${import.meta.env.VITE_P1}/${title}-dub-episode-${ep}`} allowFullScreen={true} ></iframe></div>;
@@ -105,6 +145,16 @@ function AnimeEpisode() {
                         <option value="vidPl8">VidPl-8</option>
                         <option value="vidPl9">VidPl-9</option>
                         <option value="vidPl10">Pl-10</option>
+                        <option value="vidPl11">Pl-11</option>
+                        <option value="vidPl12">Pl-12</option>
+                        <option value="vidPl13">Pl-13</option>
+                        <option value="vidPl14">Pl-14</option>
+                        <option value="vidPl15">Pl-15</option>
+                        <option value="vidPl16">Pl-16</option>
+                        <option value="vidPl17">Pl-17</option>
+                        <option value="vidPl18">Pl-18</option>
+                        <option value="vidPl19">Pl-19</option>
+                        <option value="vidPl20">Pl-20</option>
                     </select>
                     <select value={vidPl} onChange={handleVidPlChange}>
                         <option>SUB</option>

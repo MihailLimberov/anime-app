@@ -125,6 +125,67 @@
     }
 }
 
+#iframe-container7 {
+    border: solid 1px rgb(0, 75, 0);
+    position: relative;
+    width: 980px;
+    height: 390px;
+    overflow: hidden;
+
+    iframe {
+        border: 0;
+        position: absolute;
+        scroll-behavior: unset;
+        top: -100px;
+        left: 0;
+
+        width:1080px;
+        height: 720px;
+        overflow: hidden;
+    }
+}
+
+#iframe-container8 {
+
+    border: solid 1px rgb(0, 75, 0);
+    position: relative;
+    width: 667px;
+    height: 375px;
+    overflow: hidden;
+
+    iframe {
+        border: 0;
+        position: absolute;
+        scroll-behavior: unset;
+        top: -50px;
+        left: -3px;
+
+        width: 667px;
+        height: 464px;
+        overflow: hidden;
+    }
+}
+
+#iframe-container9 {
+    border: solid 1px rgb(0, 75, 0);
+    position: relative;
+    width: 1000px;
+    height: 350px;
+    overflow: hidden;
+
+    iframe {
+        border: 0;
+        position: absolute;
+        scroll-behavior: unset;
+        top: -100px;
+        left: 0;
+
+        width:1080px;
+        height: 475px;
+        overflow: hidden;
+    }
+}
+
 .iframe-container {
     border: solid 1px rgb(0, 75, 0);
     position: relative;
