@@ -19,7 +19,7 @@ function AnimeEpisode() {
                     <iframe className="iframe-content" src={`${import.meta.env.VITE_P2}/anime/${title}-episode-${ep}`} allowFullScreen={true}></iframe></div>;
             case "vidP3":
                 return <div className="iframe-container">
-                    <iframe className="iframe-content" src={`${import.meta.env.VITE_3}/${sessionStorage.getItem("alId")}/${ep}`} scrolling="no" allowFullScreen={true}></iframe></div>;
+                    <iframe className="iframe-content" src={`${import.meta.env.VITE_3}/${sessionStorage.getItem("alId")}/${ep}`} allowFullScreen={true}></iframe></div>;
             case "vidPl3":
                 return <div id="iframe-container3">
                     <iframe src={`${import.meta.env.VITE_P3}?id=${id}&ep=${ep}`} scrolling="no" allowFullScreen={true}></iframe></div>;
