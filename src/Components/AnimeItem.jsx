@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import '../Components/styles/animeItem.css';
 import HomePage from "./HomePage";
 import EpisodeList from "./EpisodeList";
+import { arm } from "@kawaiioverflow/arm";
 
 
 function AnimeItem() {
@@ -89,6 +90,7 @@ function AnimeItem() {
     sessionStorage.setItem("title2Key", transformTitle(titleSlash));
     sessionStorage.setItem("title3Key", transformTitle(getEnglishTitle()));
     sessionStorage.setItem("title4Key", transformTitle(title_english));
+    sessionStorage.setItem("alId", arm?.find(({ mal_id }) => mal_id == id)?.anilist_id);
 
     return (<>
         <HomePage />
