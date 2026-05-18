@@ -42,26 +42,6 @@
     }
 }
 
-#iframe-container3 {
-    border: solid 1px rgb(0, 75, 0);
-    position: relative;
-    width: 667px;
-    height: 375px;
-    overflow: hidden;
-
-    iframe {
-        border: 0;
-        position: absolute;
-        scroll-behavior: unset;
-        top: -75px;
-        left: -91px;
-
-        width: 772px;
-        height: 700px;
-        overflow: hidden;
-    }
-}
-
 #iframe-container4 {
 
     border: solid 1px rgb(0, 75, 0);
@@ -125,64 +105,22 @@
     }
 }
 
-#iframe-container7 {
+.iframe-container7 {
     border: solid 1px rgb(0, 75, 0);
     position: relative;
-    width: 980px;
-    height: 390px;
-    overflow: hidden;
+    width: 98%;
+    height: 16rem;
+    padding-top: 35%;
 
-    iframe {
-        border: 0;
+    .iframe-content {
         position: absolute;
-        scroll-behavior: unset;
-        top: -100px;
+        top: 0;
         left: 0;
-
-        width:1080px;
-        height: 720px;
-        overflow: hidden;
-    }
-}
-
-#iframe-container8 {
-
-    border: solid 1px rgb(0, 75, 0);
-    position: relative;
-    width: 667px;
-    height: 375px;
-    overflow: hidden;
-
-    iframe {
+        bottom: 0;
+        right: 0;
         border: 0;
-        position: absolute;
-        scroll-behavior: unset;
-        top: -50px;
-        left: -3px;
-
-        width: 667px;
-        height: 464px;
-        overflow: hidden;
-    }
-}
-
-#iframe-container9 {
-    border: solid 1px rgb(0, 75, 0);
-    position: relative;
-    width: 1000px;
-    height: 350px;
-    overflow: hidden;
-
-    iframe {
-        border: 0;
-        position: absolute;
-        scroll-behavior: unset;
-        top: -100px;
-        left: 0;
-
-        width:1080px;
-        height: 475px;
-        overflow: hidden;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -245,7 +183,6 @@
 
     .iframe-container {
         width: 98%;
-        height: 10rem;
         padding-top: 55%;
     }
 
