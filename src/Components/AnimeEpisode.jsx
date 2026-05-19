@@ -3,13 +3,13 @@ import EpisodeList from "./EpisodeList";
 import HomePage from "./HomePage";
 import '../Components/styles/animeEp.css';
 import { useState } from "react";
-//import animeIds from "../id-mapper/list-ids.json";
+import animeIds from "../id-mapper/list-ids.json";
 
 function AnimeEpisode() {
 
     const { id, title, ep, episodes } = useParams();
     const [vidPl, setVidPl] = useState("vidPl1");
-    const animeIds = "123";
+    
     const idsObj = animeIds?.find(({ mal_id }) => mal_id == id);
 
     const anilistId = idsObj?.anilist_id;
