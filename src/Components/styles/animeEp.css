@@ -105,25 +105,6 @@
     }
 }
 
-.iframe-container7 {
-    border: solid 1px rgb(0, 75, 0);
-    position: relative;
-    width: 98%;
-    height: 16rem;
-    padding-top: 35%;
-
-    .iframe-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        border: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
 .iframe-container {
     border: solid 1px rgb(0, 75, 0);
     position: relative;

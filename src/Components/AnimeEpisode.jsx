@@ -9,13 +9,13 @@ function AnimeEpisode() {
 
     const { id, title, ep, episodes } = useParams();
     const [vidPl, setVidPl] = useState("vidPl1");
-    
+
     const idsObj = animeIds?.find(({ mal_id }) => mal_id == id);
 
     const anilistId = idsObj?.anilist_id;
     const imdbId = idsObj?.imdb_id;
     const theMovieDbId = idsObj?.themoviedb_id;
-    const seasonNum = (idsObj?.season?.tvdb && idsObj?.season?.tvdb != 0) ? idsObj?.season?.tvdb : 1;
+    const seasonNum = (idsObj?.season && idsObj?.season != 0) ? idsObj?.season : 1;
 
     const pl3String = (idsObj?.type !== "MOVIE") ? `${import.meta.env.VITE_P3}/tv/${imdbId}/${seasonNum}-${ep}` : `${import.meta.env.VITE_P3}/movie/${imdbId}`;
     const pl4String = (idsObj?.type !== "MOVIE") ? `${import.meta.env.VITE_P4}/tv/${imdbId}&s=${seasonNum}&e=${ep}` : `${import.meta.env.VITE_P4}/movie/${imdbId}`;
@@ -43,8 +43,8 @@ function AnimeEpisode() {
                 return <div className="iframe-container">
                     <iframe className="iframe-content" src={`${pl6String}`} allowFullScreen={true}></iframe></div>;
             case "vidPl7":
-                return <div className="iframe-container7">
-                    <iframe className="iframe-content" src={`${import.meta.env.VITE_P7}/${anilistId}/${ep}`} allowFullScreen={true}></iframe></div>;
+                return <div className="iframe-container">
+                    <iframe className="iframe-content" src={`${import.meta.env.VITE_P7}/${anilistId}/${ep}/sub`} scrolling="no" allowFullScreen={true}></iframe></div>;
             case "vidPl8":
                 return <div id="iframe-container6">
                     <iframe src={`${import.meta.env.VITE_P8}?id=${anilistId}&ep=${ep}`} scrolling="no" allowFullScreen={true}></iframe></div>;
